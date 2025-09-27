@@ -1,0 +1,51 @@
+body {
+    overflow-x: hidden;
+}
+
+.portlet-title-editable,
+.portlet-title-default,
+.portlet-header {
+    display: none;
+}
+
+.portlet-content,
+.portlet-content-editable,
+.portlet-decorate {
+    border: none !important;
+    padding-top: 0 !important;
+}
+
+.header-fixed {
+    position: fixed !important;
+    z-index: 1001;
+    transition: margin-bottom 2s;
+}
+
+body.open-admin-panel .header-fixed {
+  max-width: calc(100% - 320px);
+}
+
+.text-btn {
+    color: #fff !important;
+}
+
+.footer-link {
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.footer-link:hover {
+  color: #b5833a; /* dourado */
+  transform: translateY(-2px);
+}
+
+footer img {
+  transition: transform 0.3s ease;
+}
+
+footer img:hover {
+  transform: scale(1.15);
+}
+

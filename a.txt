@@ -1,0 +1,21 @@
+<footer class="footer text-white mt-auto py-5" style="background-color: #111;">
+  <div class="container text-center">
+    <!-- Menu -->
+    <nav class="nav-footer-menu d-flex justify-content-center mb-4 flex-wrap gap-4">
+      <a href="${site_default_url}/inicio/" class="footer-link">Início</a>
+      <a href="${site_default_url}/contato/" class="footer-link">Reserve já</a>
+      <a href="${site_default_url}/noticias/" class="footer-link">Notícias</a>
+    </nav>
+    <!-- Telefone -->
+    <p class="number-p mb-3" style="color: #ccc; font-size: 1rem;">
+      📞 (61) 99500-2066 — Atendimento exclusivo via WhatsApp
+    </p>
+    <!-- Logo + Direitos -->
+    <div class="d-flex justify-content-center align-items-center gap-3">
+      <img class="mr-2" src="${site_logo}" alt="Logo" height="32" width="32" style="filter: brightness(0) invert(1);" />
+      <p class="footer-p mb-0" style="font-size: 0.95rem; color: #aaa;">
+        © 2025 — Livingstone Hotels & Resorts
+      </p>
+    </div>
+  </div>
+</footer>
