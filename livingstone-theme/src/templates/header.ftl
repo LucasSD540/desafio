@@ -8,6 +8,7 @@
     <#else>
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       background-color: #fff;
+      margin-bottom: 80px;
     </#if>
     z-index: 10;
     width: 100%;
@@ -45,9 +46,9 @@
       </a>
     </div>
     <div style="display: flex; align-items: center; gap: 16px;">
-      <a href="${site_default_url}/inicio/" style="font-size: 24px; color: #fff; text-decoration: none;">Início</a>
-      <a href="${site_default_url}/contato/" style="font-size: 24px; color: #fff; text-decoration: none;">Reserve já</a>
-      <a href="${site_default_url}/noticias/" style="font-size: 24px; color: #fff; text-decoration: none;">Notícias</a>
+      <a href="${site_default_url}/inicio/" style="font-size: 24px; <#if is_first_parent> color: #fff;<#else>color: #000;</#if> text-decoration: none;">Início</a>
+      <a href="${site_default_url}/contato/" style="font-size: 24px; <#if is_first_parent> color: #fff;<#else>color: #000;</#if> text-decoration: none;">Reserve já</a>
+      <a href="${site_default_url}/noticias/" style="font-size: 24px; <#if is_first_parent> color: #fff;<#else>color: #000;</#if> text-decoration: none;">Notícias</a>
         <#if !theme_display.isSignedIn()>
           <a class="text-btn" href="${theme_display.getURLSignIn()}"
             style="font-size: 24px; text-decoration: none; background-color: #b5833a; color: #fff; padding: 6px 12px; border-radius: 4px;">
