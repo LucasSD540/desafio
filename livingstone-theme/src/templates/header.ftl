@@ -42,13 +42,14 @@
           height="${site_logo_height}"
           width="${site_logo_width}"
           style="width: 48px; height: 48px; margin-right: 16px;" />
-        <span style="font-size: 24px;">Livingstone Hotels & Resorts</span>
+        <span style="font-size: 24px; <#if is_first_parent> color: #fff;<#else>color: #000;</#if>">Livingstone Hotels & Resorts</span>
       </a>
     </div>
     <div style="display: flex; align-items: center; gap: 16px;">
       <a href="${site_default_url}/inicio/" style="font-size: 24px; <#if is_first_parent> color: #fff;<#else>color: #000;</#if> text-decoration: none;">Início</a>
       <a href="${site_default_url}/contato/" style="font-size: 24px; <#if is_first_parent> color: #fff;<#else>color: #000;</#if> text-decoration: none;">Reserve já</a>
       <a href="${site_default_url}/noticias/" style="font-size: 24px; <#if is_first_parent> color: #fff;<#else>color: #000;</#if> text-decoration: none;">Notícias</a>
+      <a href="${site_default_url}/galeria-de-imagens/" style="font-size: 24px; <#if is_first_parent> color: #fff;<#else>color: #000;</#if> text-decoration: none;">Galeria</a>
         <#if !theme_display.isSignedIn()>
           <a class="text-btn" href="${theme_display.getURLSignIn()}"
             style="font-size: 24px; text-decoration: none; background-color: #b5833a; color: #fff; padding: 6px 12px; border-radius: 4px;">
@@ -81,10 +82,6 @@ window.addEventListener('scroll', function() {
     });
     header.querySelector('span').style.color = '#fff';
   }
-});
-const textButton = document.querySelector("text-btn");
-textButton.addEventListener('mouseenter', () => {
-  textButton.style.color = '#fff'
 });
 
 document.querySelectorAll('#my-custom-header div a').forEach(a => {
